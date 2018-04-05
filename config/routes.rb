@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  resources :projects
+  get 'topics/index'
+
+  get 'topics/show'
 
   resources :projects
+  resources :topics
+
   get 'about-us', to: 'pages#about'
   get 'contact', to: 'pages#contact'
   get 'employment', to: 'pages#employment'
