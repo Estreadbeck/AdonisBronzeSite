@@ -1,0 +1,9 @@
+<div>Title: <%= @project_item.title %></div>
+<div>Subtitle: <%= @project_item.subtitle %></div>
+<div>Body: <%= @project_item.body %></div>
+
+<div>
+  <div><%= link_to "Edit Item", edit_project_path(@project_item) %></div>
+  <div><%= link_to 'Delete Project', @project_item, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+  <div><%= link_to 'Back', projects_path %></div>
+</div>

@@ -8,10 +8,6 @@ class PagesController < ApplicationController
   def contact
   end
 
-  def gallery
-    @project_item = Project.all
-  end
-
   def employment
   end
 end
