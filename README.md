@@ -1,25 +1,28 @@
-# README
+# To Do
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Things to work on:
 
-Things you may want to cover:
+* Homepage
+  - Welcome
+  - highlights
+  - latest projects
 
-* Ruby version
+* Contact
+  - maps
+  - specific phone info
+  - social media
 
-* System dependencies
+* About Us
+  - who are we?
+  - what we do
+  - services we offer
 
-* Configuration
+* Gallery
+  - paintings
+  - bronzes and monuments
+  - milling
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# AdonisBronzeSite
+* Employment
+  - description of work
+  - job applications
+  - contacts.
