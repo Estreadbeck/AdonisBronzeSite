@@ -9,6 +9,7 @@ class PagesController < ApplicationController
   end
 
   def gallery
+    @project_item = Project.all
   end
 
   def employment
