@@ -1,6 +1,9 @@
 <div>Title: <%= @project_item.title %></div>
 <div>Subtitle: <%= @project_item.subtitle %></div>
 <div>Body: <%= @project_item.body %></div>
+<% @project_item.images.each do |t| %>
+      <p><%= image_tag t.image %></p>
+      <% end %>
 
 <div>
   <div><%= link_to "Edit Item", edit_project_path(@project_item) %></div>

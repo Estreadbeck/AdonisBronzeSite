@@ -18,7 +18,7 @@ class ProjectsController < ApplicationController
 
     respond_to do |format|
       if @project_item.save
-        format.html { redirect_to portfolios_path, notice: 'Project has been saved.' }
+        format.html { redirect_to projects_path, notice: 'Project has been saved.' }
         
       else
         format.html { render :new }
@@ -60,7 +60,8 @@ class ProjectsController < ApplicationController
   def project_params
     params.require(:project).permit(:title, 
                                       :subtitle, 
-                                      :body
+                                      :body,
+                                      images_attributes: [:id, :image, :name, :_destroy]
                                       )
   end
 end

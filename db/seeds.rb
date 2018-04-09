@@ -7,3 +7,12 @@
     )
 end
 puts "5 projects created."
+
+3.times do |image|
+  Project.last.images.create!(
+    image: "http://via.placeholder.com/350x200",
+    name: "Image #{image}",
+    description: 'this is a test image'
+  )
+end
+puts "3 images created"
