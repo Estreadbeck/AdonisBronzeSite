@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'about-us', to: 'pages#about'
   get 'contact', to: 'pages#contact'
   get 'employment', to: 'pages#employment'
-  get 'gallery', to: 'pages#gallery'
+  get 'project/:id', to: 'projects#show', as: 'project_show'
 
   root to: 'pages#home'
 
