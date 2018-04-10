@@ -61,3 +61,5 @@ gem 'carrierwave', '~> 1.2', '>= 1.2.2'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 
 gem 'petergate', '~> 1.8', '>= 1.8.1'
+
+gem 'bootstrap', '~> 4.0'
