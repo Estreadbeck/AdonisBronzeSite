@@ -4,4 +4,12 @@
   <div><%= link_to 'Contact', contact_path %></div>
   <div><%= link_to 'Gallery', projects_path %></div>
   <div><%= link_to 'Employment', employment_path %></div>
+  
+  <% if current_user %>
+    <div><%= link_to "Logout", destroy_user_session_path, method: :delete %></div>
+  <% else %>
+    <div><%= link_to 'Register', new_user_registration_path %></div>
+    <div><%= link_to 'Login', new_user_session_path %></div>
+  <% end %>
+
 </div>
