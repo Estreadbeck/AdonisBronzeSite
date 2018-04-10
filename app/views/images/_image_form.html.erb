@@ -1,0 +1,23 @@
+<%= form_for(@project_image) do |t| %>
+
+
+  <div>
+    <%= t.label :name %>
+    <%= t.text_field :name %>
+  </div>
+
+  <div>
+    <%= t.label :description %>
+    <%= t.text_field :description %>
+  </div>
+
+  <div>
+    <%= t.label :image %>
+    <%= t.file_field :image %>
+  </div>
+
+  <div>
+    <%= t.submit %>
+  </div>
+
+  <% end %>

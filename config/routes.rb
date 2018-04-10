@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'topics/show'
 
   resources :projects
+  resources :images
   resources :topics
 
   get 'about-us', to: 'pages#about'

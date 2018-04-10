@@ -9,10 +9,11 @@ end
 puts "5 projects created."
 
 3.times do |image|
-  Project.last.images.create!(
+  Image.create!(
     image: "http://via.placeholder.com/350x200",
     name: "Image #{image}",
-    description: 'this is a test image'
+    description: 'this is a test image',
+    project_id: Project.first.id
   )
 end
 puts "3 images created"

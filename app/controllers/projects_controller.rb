@@ -3,6 +3,8 @@ class ProjectsController < ApplicationController
 
   def show
     @project_item = Project.find(params[:id])
+    @project_image = Project.find(params[:id]).images
+    
   end
 
   def index
@@ -15,6 +17,7 @@ class ProjectsController < ApplicationController
 
   def create
     @project_item = Project.new(project_params)
+    
 
     respond_to do |format|
       if @project_item.save
@@ -27,6 +30,7 @@ class ProjectsController < ApplicationController
   end
 
   def update
+    @project_image = Project.find(params[:id]).images
     respond_to do |format|
       if @project_item.update(project_params)
         format.html { redirect_to projects_path, notice: 'Project was successfully updated.' }
@@ -42,7 +46,7 @@ class ProjectsController < ApplicationController
   def destroy
     @project_item.destroy
     respond_to do |format|
-      format.html { redirect_to gallery_path, notice: 'Project successfully deleted.' }
+      format.html { redirect_to projects_path, notice: 'Project successfully deleted.' }
       
     end
   end
